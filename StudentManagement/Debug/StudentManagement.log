@@ -1,16 +1,7 @@
-﻿  AverageSorting.cpp
-C:\Users\GMT\source\repos\StudentManagement\StudentManagement\Helper.h(7,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  IndexSorting.cpp
-C:\Users\GMT\source\repos\StudentManagement\StudentManagement\Helper.h(7,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  School.cpp
-C:\Users\GMT\source\repos\StudentManagement\StudentManagement\Helper.h(7,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+﻿  StudentManagement.cpp
+C:\Users\GMT\source\repos\StudentManagement\StudentManagement\Helper.h(10,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\GMT\source\repos\StudentManagement\StudentManagement\SearchSystem.h(36,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\GMT\source\repos\StudentManagement\StudentManagement\School.cpp(31,20): warning C4018: '<': signed/unsigned mismatch
-  Student.cpp
-C:\Users\GMT\source\repos\StudentManagement\StudentManagement\Helper.h(7,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\GMT\source\repos\StudentManagement\StudentManagement\Student.cpp(77,9): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  StudentManagement.cpp
-C:\Users\GMT\source\repos\StudentManagement\StudentManagement\Helper.h(7,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\GMT\source\repos\StudentManagement\StudentManagement\SearchSystem.h(36,27): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+C:\Users\GMT\source\repos\StudentManagement\StudentManagement\UIClient.h(93,15): warning C4101: 'e': unreferenced local variable
+C:\Users\GMT\source\repos\StudentManagement\StudentManagement\UIClient.h(116,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\GMT\source\repos\StudentManagement\StudentManagement\UIClient.h(127,39): warning C4018: '>': signed/unsigned mismatch
   StudentManagement.vcxproj -> C:\Users\GMT\source\repos\StudentManagement\Debug\StudentManagement.exe

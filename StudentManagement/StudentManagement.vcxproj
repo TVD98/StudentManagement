@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AverageSorting.cpp" />
+    <ClCompile Include="ExcelFormatXLS.cpp" />
     <ClCompile Include="IndexSorting.cpp" />
     <ClCompile Include="School.cpp" />
     <ClCompile Include="Student.cpp" />
@@ -149,9 +150,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AverageSorting.h" />
+    <ClInclude Include="ExcelFormatXLS.h" />
     <ClInclude Include="Helper.h" />
     <ClInclude Include="IndexSorting.h" />
     <ClInclude Include="ISorting.h" />
+    <ClInclude Include="ISupportedExcel.h" />
     <ClInclude Include="School.h" />
     <ClInclude Include="SearchSystem.h" />
     <ClInclude Include="SortingFactory.h" />
@@ -159,6 +162,10 @@
     <ClInclude Include="Student.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="SubjectsSingleton.h" />
+    <ClInclude Include="UIClient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DSSV.xls" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

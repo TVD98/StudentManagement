@@ -36,6 +36,9 @@
     <ClCompile Include="AverageSorting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExcelFormatXLS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
@@ -71,5 +74,17 @@
     <ClInclude Include="Helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ISupportedExcel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExcelFormatXLS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DSSV.xls" />
   </ItemGroup>
 </Project>

@@ -46,11 +46,11 @@ double Student::getAverage()
 	if (scoresMap.size() == 0) {
 		return 0.0;
 	}
-		
+
 	// có đk
 	double scoresTotal = 0.0;
 	int coefficientTotal = 0;
-	
+
 	map<string, double>::iterator it;
 	for (it = scoresMap.begin(); it != scoresMap.end(); it++)
 	{
@@ -63,6 +63,8 @@ double Student::getAverage()
 
 bool Student::contains(string key)
 {
+	if (id.find(key) != string::npos || name.find(key) != string::npos)
+		return true;
 	return false;
 }
 
@@ -74,18 +76,18 @@ int Student::getSholarship()
 			return 300000;
 		return 270000;
 	}
-	return 0.0;
+	return 0;
 }
 
 int Student::getSubsidy()
 {
-	return subsidyTypeDict.find(subsidyType)->second;
+	return subsidyTypeToPriceDict.find(subsidyType)->second;
 }
 
 string Student::toString()
 {
-	return "Student: [id: " + id + ", name: " + name + ", average: " + to_string(Helper::roundNumberUp(getAverage())) 
-		+ ", grade: " + gradeTypeDict.find(getGrade())->second + ", point training : " + to_string(pointTraining) + ", scholarship : "
+	return "Student: [id: " + id + ", name: " + name + ", average: " + to_string(getAverage())
+		+ ", grade: " + gradeTypeToStringDict.find(getGrade())->second + ", point training : " + to_string(pointTraining) + ", scholarship : "
 		+ to_string(getSholarship()) + ", subsidy: " + to_string(getSubsidy()) + "]";
 }
 

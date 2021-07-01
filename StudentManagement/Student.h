@@ -17,11 +17,17 @@ enum GradeType
 	VERY_GOOD, GOOD, PASS, WEAK
 };
 
-static const map<SubsidyType, int> subsidyTypeDict = { {SubsidyType::NONE, 0}, {SubsidyType::MARTYRS, 200000},
+static const map<SubsidyType, int> subsidyTypeToPriceDict = { {SubsidyType::NONE, 0}, {SubsidyType::MARTYRS, 200000},
 	{SubsidyType::POOR_HOUSEHOLD, 180000} };
 
-static const map<GradeType, string> gradeTypeDict = { {GradeType::VERY_GOOD, "Gioi"}, {GradeType::GOOD, "Kha"},
-	{GradeType::PASS, "Trung binh"}, {GradeType::VERY_GOOD, "Yeu"} };
+static const map<string, SubsidyType> stringToSubsidyTypeDict = { {"Khong", SubsidyType::NONE},
+	{"Ho ngheo", SubsidyType::POOR_HOUSEHOLD}, {"Con thuong binh", SubsidyType::MARTYRS} };
+
+static const map<int, SubsidyType> intToSubsidyTypeDict = { {1, SubsidyType::NONE},
+	{2, SubsidyType::POOR_HOUSEHOLD}, {3, SubsidyType::MARTYRS} };
+
+static const map<GradeType, string> gradeTypeToStringDict = { {GradeType::VERY_GOOD, "Gioi"}, {GradeType::GOOD, "Kha"},
+	{GradeType::PASS, "Trung binh"}, {GradeType::WEAK, "Yeu"} };
 
 class Student
 {

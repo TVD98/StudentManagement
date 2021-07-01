@@ -38,6 +38,7 @@ public:
 		}
 	}
 
+private:
 	static void merge(vector<Student>& studentList, int left, int mid, int right, ISorting* sorting, OrderType orderType) {
 		// continue
 		vector<Student>* tempList = new vector<Student>(right - left + 1); // Khoi tao mang tam de sap xep
